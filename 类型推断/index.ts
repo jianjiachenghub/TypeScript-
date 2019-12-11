@@ -7,4 +7,10 @@ myFavoriteNumber2 = 7;
 let myFavoriteNumber3: string = 'seven';
 myFavoriteNumber3 = 7;
 
+let myFavoriteNumber4
+myFavoriteNumber4 = "xxx"
+console.log(myFavoriteNumber4.length)
+myFavoriteNumber4 = 7;
+console.log(myFavoriteNumber4.length) // 访问属性的时候回去推断类型在访问属性
+
 
