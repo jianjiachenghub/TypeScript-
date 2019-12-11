@@ -4,3 +4,5 @@ function sayHello(person:any) {
 
 let user = [0, 1, 2];
 console.log(sayHello(user));
+let fibonacci =2
+console.log(fibonacci)
