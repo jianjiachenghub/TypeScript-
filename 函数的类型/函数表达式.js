@@ -8,4 +8,6 @@ var mySum = function (x, y) {
 var mySum2 = function (x, y) {
     return x + y;
 };
+//再类型声明的时候箭头函数指明函数的类型，但也可以用在函数的实现   
+var mySum3 = function (x, y) { return x + y; };
 //# sourceMappingURL=函数表达式.js.map
