@@ -8,7 +8,7 @@
  */
 /* 共有属性*/
 class Animal3 {
-    public name:any;
+    public name:any; //TODO:为什么不加类型会报错： 成员“name”隐式包含类型“any”  不是会推断吗
     public name2='name2';
     public constructor(name:any) {
         this.name = name;
