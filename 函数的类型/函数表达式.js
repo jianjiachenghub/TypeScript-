@@ -10,4 +10,7 @@ var mySum2 = function (x, y) {
 };
 //再类型声明的时候箭头函数指明函数的类型，但也可以用在函数的实现   
 var mySum3 = function (x, y) { return x + y; };
+//使用带有调用签名的对象字面量来定义函数(感觉和用接口定义函数类似)  {}必须加 不然无法识别“ ： ” 
+var mySum4 = function (x, y) { return x + y; };
+console.log(mySum4(1, 2));
 //# sourceMappingURL=函数表达式.js.map
