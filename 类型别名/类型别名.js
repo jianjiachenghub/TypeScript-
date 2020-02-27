@@ -19,4 +19,8 @@ function handleEvent(ele, event) {
 }
 handleEvent(document.getElementById('hello'), 'scroll'); // 没问题
 handleEvent(document.getElementById('world'), 'dbclick'); // 报错，event 不能为 'dbclick'
+var jianx = {
+    name: 'asd',
+    age: 12
+};
 //# sourceMappingURL=类型别名.js.map

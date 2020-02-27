@@ -58,6 +58,11 @@ myGenericNumber.add = function(x, y) { return x + y; };
 
 //在TypeScript使用泛型创建工厂函数时，需要引用构造函数的类类型
 //TODO: 意思是{new(): T; }这个是构造函数的类类型？
+/* 
+ *c:{new():T}里的'new'是Constructor Type Literal，下面new c()里的'new'是new operator，二者是不同的东西。
+ *c:{new():T} 和 c:new()=>T是一样的，后者是前者的简写，意即C的类型是对象类型且这个对象包含返回类型是T的构造函数。（个人理解：c是一个含有构造函数的类）
+ *注意，':'后面是Type Information，这里的'=>'不是arrow function，只是用来标明函数返回类型。 
+*/
 function create<T>(c: {new(): T; }): T {
     return new c();
 }

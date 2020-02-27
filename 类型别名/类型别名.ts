@@ -30,4 +30,14 @@ function handleEvent(ele: Element|null, event: EventNames) {
 handleEvent(document.getElementById('hello'), 'scroll');  // 没问题
 handleEvent(document.getElementById('world'), 'dbclick'); // 报错，event 不能为 'dbclick'
 
+type jian = {
+    name:string,
+    age:number,
+    hi:number
+}
+
+let jianx:jian = {
+    name:'asd',
+    age:12
+}
 

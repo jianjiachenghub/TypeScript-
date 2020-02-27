@@ -8,6 +8,7 @@
  * 一个类可以实现多个接口
  * 接口可以继承接口
  * 接口也可以继承继承类
+ * 类类型说的就是类这个类型的数据结构
  */
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -60,6 +61,12 @@ var Car2 = /** @class */ (function () {
     return Car2;
 }());
 /*接口可以继承类*/
+// 类定义会创建两个东西：类的实例类型和一个构造函数。 因为类可以创建出类型，所以你能够在允许使用接口的地方使用类。
+/* 当接口继承了一个类类型时，它会继承类的成员但不包括其实现。
+就好像接口声明了所有类中存在的成员，但并没有提供具体实现一样。
+接口同样会继承到类的private和protected成员。
+这意味着当你创建了一个接口继承了一个拥有私有或受保护的成员的类时，
+这个接口类型只能被这个类或其子类所实现（implement）。 */
 var Control = /** @class */ (function () {
     function Control() {
     }
