@@ -111,5 +111,7 @@ function runParallel(jobs:Array< (x: number) => Promise<string> >) {
 
 
 ### 最终测试结果
+
 添加深比较，再次判断
+
 <img src='./最终测试结果.png'>
