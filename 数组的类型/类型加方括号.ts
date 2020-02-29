@@ -6,3 +6,4 @@ fibonacci2.push('8');//报错
 
 //用 any 表示数组中允许出现任意类型
 let list: any[] = ['xcatliu', 25, { website: 'http://xcatliu.com' }];
+let list2:Array<number> = [1,2]
