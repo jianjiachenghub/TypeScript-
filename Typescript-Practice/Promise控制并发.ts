@@ -3,8 +3,8 @@
 /**
  * @description 并发控制函数
  * @date 2020-02-28
- * @param {Array< (x: number) => Promise<string> >} jobs
- * @returns {Array<string>}
+ * @param {Array< (x: number) => Promise<string> >} jobs 任务列表
+ * @returns {Array<string>} 任务执行结果
  */
 function runParallel(jobs:Array< (x: number) => Promise<string> >) {
     let resValue:any = [];
