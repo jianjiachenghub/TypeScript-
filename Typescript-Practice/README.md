@@ -9,6 +9,8 @@
 runParallel 最终按照 jobs 数组顺序，把每个任务的返回值储存在一个数组里，
 并返回这个数组（类似 Promise.all）。
 
+并使用 mocha 和 chai 对你的函数进行单元测试
+
 ```
 // 1 ------------> |
 // 2 ---------> |
@@ -32,8 +34,8 @@ runParallel 最终按照 jobs 数组顺序，把每个任务的返回值储存�
 /**
  * @description 并发控制函数
  * @date 2020-02-28
- * @param {Array< (x: number) => Promise<string> >} jobs
- * @returns {Array<string>}
+ * @param {Array< (x: number) => Promise<string> >} jobs 任务列表
+ * @returns {Array<string>} 任务执行结果
  */
 function runParallel(jobs:Array< (x: number) => Promise<string> >) {
     let resValue:any = [];
@@ -44,6 +46,7 @@ function runParallel(jobs:Array< (x: number) => Promise<string> >) {
         function requestWork() {
             // count==jobs.length时，可能还有任务还在执行，当i==0任务肯定都执行完了
             if (count >= jobs.length && i===0){
+              console.log(resValue)
                 resolve(resValue)
             }
             // count在最后的时候有可能越位需要判断
