@@ -5,6 +5,7 @@
  */
 let tom2: [string, number] = ['Tom', 25];
 
+
 /* let tom7: [string, number]; // TODO:与文档说法不一致
 tom7[0] = 'Tom';
 tom7[1] = 25;
