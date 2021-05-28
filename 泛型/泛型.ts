@@ -25,6 +25,7 @@ let output4 = identity([1,123]);//推断类型 function identity<number[]>(arg: 
 /* 
  * 类型变量代表的是任意类型
  * 所以使用这个函数的人可能传入的是个数字，而数字是没有 .length属性的 
+ * 所以需要泛型约束 具体看另一个extends的写法
  */
 function loggingIdentity<T>(arg: T): T {
     console.log(arg.length);  // Error: T doesn't have .length
@@ -56,3 +57,19 @@ function createArray<T = string>(length: number, value: T): Array<T> {
     }
     return result;
 }
+
+
+/**
+ * 3 泛型函数接口
+ */
+interface ConfigFn {
+    <T>(value: T): T;
+}
+ 
+var ConfigFnImpl = function <T>(value: T): T {
+    return value;
+}
+ 
+var getData: ConfigFn = ConfigFnImpl
+ 
+getData<string>('张三');

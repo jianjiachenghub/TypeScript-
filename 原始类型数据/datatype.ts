@@ -46,3 +46,38 @@ let u2: undefined;
 let num2: number = u2; */
 
 
+
+// Unknown 类型
+let value: unknown;
+
+value = true; // OK
+value = 42; // OK
+value = "Hello World"; // OK
+value = []; // OK
+value = {}; // OK
+value = Math.random; // OK
+value = null; // OK
+value = undefined; // OK
+value = new TypeError(); // OK
+value = Symbol("type"); // OK
+
+let value1: unknown = value; // OK
+let value2: any = value; // OK
+let value3: boolean = value; // Error
+let value4: number = value; // Error
+let value5: string = value; // Error
+let value6: object = value; // Error
+let value7: any[] = value; // Error
+let value8: Function = value; // Error
+
+// Never 类型
+
+// 返回never的函数必须存在无法达到的终点
+function error(message: string): never {
+    throw new Error(message);
+  }
+  
+  function infiniteLoop(): never {
+    while (true) {}
+  }
+  
