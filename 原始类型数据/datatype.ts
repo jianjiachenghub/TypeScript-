@@ -48,6 +48,8 @@ let num2: number = u2; */
 
 
 // Unknown 类型
+// unknown与any的最大区别是： 任何类型的值可以赋值给any，同时any类型的值也可以赋值给任何类型。
+// unknown 任何类型的值都可以赋值给它，但它只能赋值给unknown和any
 let value: unknown;
 
 value = true; // OK
