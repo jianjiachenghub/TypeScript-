@@ -15,6 +15,16 @@ function getLength2(something: string | number): number {
     }
 } 
 
+// 或者
+
+function func(val: string | number): number {
+  if ((val as string).length) {
+    return (val as string).length
+  } else {
+    return val.toString().length
+  }
+}
+
 
 
 function getLength3(something: string | number): number {
