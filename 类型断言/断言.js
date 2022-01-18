@@ -38,3 +38,5 @@ function toBoolean(something) {
     return something;
 }
 //# sourceMappingURL=断言.js.map
+
+

@@ -22,3 +22,8 @@ namespace bajie{
 let dehua1:shuaiGe.Dehua   = new shuaiGe.Dehua()
 let dehua2:shuaiGe.Dehua   = new bajie.Dehua()
 dehua1.talk()
+
+
+let x: number = 1;
+const y = x * 2;
+export {x, y}

@@ -7,3 +7,6 @@
 // import jQuery form 'jQuery'  // 比如我这里引入jQuery 但tsc编译器肯定是不知道jQuery是什么类型的，所以就需要加上一个全局类型声明
 // 一般安装包里会自带@types 里面就是各种各样的.d.ts不用我们手动声明  cnpm install --save @types/jquery
 jQuery('#foo');
+
+// jianshu.com/p/4490babed929
+// declare 主要是是在编译是的检测 用于模块的扩展  分为全局扩展和模块的扩展
