@@ -34,7 +34,8 @@ let unusable: void = undefined;
 
 
 /* Null 和 Undefined */
-// void 的区别是，undefined 和 null 是所有类型的子类型。也就是说 undefined 类型的变量，可以赋值给 number 类型的变量
+// void 的区别是，undefined 和 null 是所有类型的子类型。也就是说 undefined 类型的变量，可以赋值给 number 类型的变量，而void不行
+// void操作符计算给定的表达式,并且返回undefined .所以我们可以这样理解,void后面随便跟着什么都是返回的undefined,又因为void 0 这个表达式最短,所以一般就用这个代替了
 let u: undefined = undefined;
 let n: null = null;
 
